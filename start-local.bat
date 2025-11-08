@@ -24,11 +24,11 @@ if exist .next rmdir /s /q .next
 echo Starting development server...
 echo.
 echo Opening browser...
-start http://localhost:3001
+start http://localhost:3000
 
 echo.
 echo Development server starting...
 echo The server will run in a new window.
 echo.
 
-start "Yoga Website Dev Server" cmd /k "npm run dev -- --port 3001"
+start "Yoga Website Dev Server" cmd /k "npm run dev

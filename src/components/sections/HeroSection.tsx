@@ -7,7 +7,7 @@ import { siteConfig } from '@/config/site'
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-16 lg:-mt-20">
+    <section id="hero" className="relative min-h-screen overflow-hidden -mt-16 lg:-mt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -20,8 +20,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-900/20 to-primary-900/60"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container-custom text-center text-white pt-10">
+      {/* Content wrapper */}
+      <div className="relative z-10 pt-16 lg:pt-20 min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex items-center justify-center">
+        <div className="container-custom text-center text-white w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +33,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-tight px-4"
+            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-10 lg:mt-0 leading-tight px-4"
           >
             Find Your
             <span className="block gradient-text bg-gradient-to-r from-primary-200 to-white">
@@ -111,6 +112,7 @@ export default function HeroSection() {
             />
           </motion.div>
         </motion.div>
+        </div>
       </div>
     </section>
   )
