@@ -18,10 +18,10 @@ export default function ClassesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-6">
             Our Classes
           </h2>
-          <p className="text-xl text-text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md md:text-lg text-text-muted max-w-3xl mx-auto leading-relaxed">
             Discover the perfect yoga practice for your needs. From gentle Hatha to dynamic Vinyasa, 
             we offer classes for every level and preference.
           </p>
@@ -97,10 +97,10 @@ export default function ClassesSection() {
           className="mt-20"
         >
           <div className="text-center mb-12">
-            <h3 className="font-serif text-3xl font-bold text-primary-700 mb-4">
+            <h3 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-4">
               Choose Your Plan
             </h3>
-            <p className="text-lg text-text-muted">
+            <p className="text-md md:text-lg text-text-muted">
               Flexible options to fit your practice and budget
             </p>
           </div>

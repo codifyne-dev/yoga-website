@@ -36,29 +36,29 @@ export default function Footer() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-xl text-primary-700">
+                  <h3 className="font-serif font-bold text-lg text-primary-700">
                     {siteConfig.name}
                   </h3>
-                  <p className="text-primary-600 text-sm">
+                  <p className="text-primary-600 text-xs">
                     {siteConfig.tagline}
                   </p>
                 </div>
               </div>
-              <p className="text-text-muted text-sm leading-relaxed">
+              <p className="text-text-muted text-xs leading-relaxed pt-4">
                 {siteConfig.description}
               </p>
             </div>
 
             {/* Quick Links */}
             <div className="space-y-3">
-              <h4 className="font-serif font-semibold text-base text-primary-700">
+              <h4 className="font-serif font-semibold text-sm text-primary-700">
                 Quick Links
               </h4>
               <ul className="space-y-2">
                 <li>
                   <button
                     onClick={() => scrollToSection('about')}
-                    className="text-sm text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
+                    className="text-xs text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
                   >
                     About Us
                   </button>
@@ -66,7 +66,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection('classes')}
-                    className="text-sm text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
+                    className="text-xs text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
                   >
                     Our Classes
                   </button>
@@ -74,7 +74,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection('contact')}
-                    className="text-sm text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
+                    className="text-xs text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
                   >
                     Contact
                   </button>
@@ -84,7 +84,7 @@ export default function Footer() {
 
             {/* Resources Links */}
             <div className="space-y-3">
-              <h4 className="font-serif font-semibold text-base text-primary-700">
+              <h4 className="font-serif font-semibold text-sm text-primary-700">
                 Resources
               </h4>
               <ul className="space-y-2">
@@ -92,7 +92,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
+                      className="text-xs text-text-muted hover:text-primary-700 transition-all duration-300 hover:translate-x-1 inline-block cursor-pointer"
                     >
                       {link.name}
                     </Link>
@@ -102,14 +102,14 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Copyright below Resources */}
-          <div className="mt-10 md:mt-6 text-sm text-text-muted text-start">
+          {/* Copyright */}
+          <div className="mt-10 md:mt-6 text-xs text-text-muted text-start">
             © {currentYear} {siteConfig.name}. All rights reserved.
           </div>
 
           {/* Contact Info Section */}
-          <div className="mt-8 pt-6 border-t border-primary-200/50">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-text-muted">
+          <div className="mt-4 pt-4 border-t border-primary-200/50">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs text-text-muted">
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary-600" />
                 <span>{siteConfig.contact.phone}</span>

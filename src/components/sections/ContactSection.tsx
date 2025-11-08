@@ -115,10 +115,10 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md md:text-lg text-text-muted max-w-3xl mx-auto leading-relaxed">
             Have questions about our classes or want to book your first session? 
             We'd love to hear from you and help you start your yoga journey.
           </p>
@@ -134,7 +134,7 @@ export default function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="font-serif text-2xl font-bold text-primary-700 mb-6">
+              <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary-700 mb-6">
                 Contact Information
               </h3>
               <div className="space-y-6">
@@ -144,7 +144,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary-700 mb-1">Phone</h4>
-                    <p className="text-text-muted">{siteConfig.contact.phone}</p>
+                    <p className="text-text-muted text-sm md:text-base">{siteConfig.contact.phone}</p>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary-700 mb-1">Email</h4>
-                    <p className="text-text-muted">{siteConfig.contact.email}</p>
+                    <p className="text-text-muted text-sm md:text-base">{siteConfig.contact.email}</p>
                   </div>
                 </div>
 
@@ -164,7 +164,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary-700 mb-1">Address</h4>
-                    <p className="text-text-muted">{siteConfig.contact.address}</p>
+                    <p className="text-text-muted text-sm md:text-base">{siteConfig.contact.address}</p>
                   </div>
                 </div>
 
@@ -174,7 +174,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary-700 mb-1">Hours</h4>
-                    <div className="text-text-muted">
+                    <div className="text-text-muted text-sm md:text-base">
                       {siteConfig.contact.hours.split('\n').map((line, index) => (
                         <div key={index}>{line}</div>
                       ))}
@@ -195,10 +195,10 @@ export default function ContactSection() {
           >
             <Card>
               <CardHeader>
-                <CardTitle className="font-serif text-2xl text-primary-700">
+                <CardTitle className="font-serif text-2xl md:text-3xl text-primary-700 mb-2">
                   Send us a Message
                 </CardTitle>
-                <p className="text-text-muted">
+                <p className="text-sm md:text-base text-text-muted">
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
               </CardHeader>
@@ -215,7 +215,7 @@ export default function ContactSection() {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 placeholder:text-sm ${
                           errors.name ? 'border-red-500 bg-red-50' : 'border-primary-200'
                         }`}
                         placeholder="Your full name"
@@ -231,7 +231,7 @@ export default function ContactSection() {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 placeholder:text-sm ${
                           errors.email ? 'border-red-500 bg-red-50' : 'border-primary-200'
                         }`}
                         placeholder="your@email.com"
@@ -249,7 +249,7 @@ export default function ContactSection() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-300"
+                      className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-300 placeholder:text-sm"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -264,7 +264,7 @@ export default function ContactSection() {
                       rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none ${
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none placeholder:text-sm ${
                         errors.message ? 'border-red-500 bg-red-50' : 'border-primary-200'
                       }`}
                       placeholder="Tell us about your yoga experience, questions, or how we can help you..."

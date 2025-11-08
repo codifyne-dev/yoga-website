@@ -39,10 +39,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-4">
             Why Choose Skyline Yoga?
           </h2>
-          <p className="text-xl text-text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md md:text-lg text-text-muted max-w-3xl mx-auto leading-relaxed pt-4">
             We believe yoga is more than just physical exercise—it's a journey of self-discovery, 
             healing, and transformation that extends far beyond the mat.
           </p>
@@ -65,7 +65,7 @@ export default function AboutSection() {
                   <h3 className="font-serif text-xl font-semibold text-primary-700 mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-text-muted leading-relaxed">
+                  <p className="text-text-muted text-md leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -84,7 +84,7 @@ export default function AboutSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-2">
+              <div className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-2">
                 500+
               </div>
               <div className="text-text-muted font-medium">
@@ -92,7 +92,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div>
-              <div className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-2">
+              <div className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-2">
                 15+
               </div>
               <div className="text-text-muted font-medium">
@@ -100,7 +100,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div>
-              <div className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-2">
+              <div className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-2">
                 50+
               </div>
               <div className="text-text-muted font-medium">

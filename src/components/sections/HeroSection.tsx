@@ -21,8 +21,8 @@ export default function HeroSection() {
       </div>
 
       {/* Content wrapper */}
-      <div className="relative z-10 pt-16 lg:pt-20 min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex items-center justify-center">
-        <div className="container-custom text-center text-white w-full">
+      <div className="relative z-10 pt-16 lg:pt-20 flex items-center justify-center min-h-screen pb-20 sm:pb-24">
+        <div className="container-custom text-center text-white w-full py-8 sm:py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-10 lg:mt-0 leading-tight px-4"
+            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-11 lg:mt-0 leading-tight px-4"
           >
             Find Your
             <span className="block gradient-text bg-gradient-to-r from-primary-200 to-white">
@@ -54,7 +54,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-sm sm:text-base md:text-lg mb-12 sm:mb-12 text-white max-w-2xl mx-auto leading-relaxed px-4"
+            className="text-md md:text-lg mb-12 sm:mb-12 text-white max-w-2xl mx-auto leading-relaxed px-4"
           >
             {siteConfig.description}
           </motion.p>
@@ -63,7 +63,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-16 sm:mb-20"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-8 sm:mb-10"
           >
             <Button
               size="lg"
@@ -91,25 +91,25 @@ export default function HeroSection() {
               View Our Classes
             </Button>
           </motion.div>
-        </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2"
-        >
+          {/* Scroll Indicator */}
           <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            className="flex justify-center mt-4 sm:mt-6"
           >
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-2 sm:h-3 bg-white rounded-full mt-1.5 sm:mt-2"
-            />
+              className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center"
+            >
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-1 h-2 sm:h-3 bg-white rounded-full mt-1.5 sm:mt-2"
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
         </div>

@@ -17,10 +17,10 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary-700 mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-6">
             What Our Students Say
           </h2>
-          <p className="text-xl text-text-muted max-w-3xl mx-auto leading-relaxed">
+          <p className="text-md md:text-lg text-text-muted max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Hear from our community of dedicated practitioners 
             who have found their balance with us.
           </p>
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
                   
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-primary-700 font-semibold text-lg">
+                      <span className="text-primary-700 font-semibold text-sm">
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
@@ -82,10 +82,10 @@ export default function TestimonialsSection() {
           className="mt-16 text-center"
         >
           <div className="bg-gradient-to-r from-primary-50 to-primary-100 rounded-2xl p-8 md:p-12">
-            <h3 className="font-serif text-3xl font-bold text-primary-700 mb-4">
+            <h3 className="font-serif text-3xl md:text-5xl font-bold text-primary-700 mb-6">
               Ready to Start Your Journey?
             </h3>
-            <p className="text-lg text-text-muted mb-8 max-w-2xl mx-auto">
+            <p className="text-md md:text-lg text-text-muted mb-8 max-w-2xl mx-auto">
               Join our community of mindful practitioners and discover the transformative power of yoga.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -72,7 +72,7 @@ export default function Navigation() {
               className="flex items-center space-x-3 group"
               onClick={() => setIsOpen(false)}
             >
-              <div className="w-12 h-10 lg:w-14 lg:h-12 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
+              <div className="w-12 h-10 lg:w-14 lg:h-12 rounded-lg overflow-hidden lg:group-hover:scale-105 transition-transform duration-300">
                 <img 
                   src="/logo.svg" 
                   alt={`${siteConfig.name} Logo`}
@@ -160,8 +160,8 @@ export default function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               className={`lg:hidden p-2 rounded-lg transition-colors duration-300 ${
                 isScrolled || !isHomepage
-                  ? 'hover:bg-primary-50 text-primary-700'
-                  : 'hover:bg-white/20 text-white'
+                  ? 'text-primary-700'
+                  : 'text-white'
               }`}
               aria-label="Toggle menu"
             >
@@ -194,8 +194,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection('hero')}
                   className={`font-medium py-2 transition-colors duration-300 text-left cursor-pointer ${
                     isScrolled || !isHomepage
-                      ? 'text-primary-700 hover:text-primary-800'
-                      : 'text-white hover:text-primary-200'
+                      ? 'text-primary-700'
+                      : 'text-white'
                   }`}
                 >
                   Home
@@ -204,8 +204,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection('about')}
                   className={`font-medium py-2 transition-colors duration-300 text-left cursor-pointer ${
                     isScrolled || !isHomepage
-                      ? 'text-primary-700 hover:text-primary-800'
-                      : 'text-white hover:text-primary-200'
+                      ? 'text-primary-700'
+                      : 'text-white'
                   }`}
                 >
                   About
@@ -214,8 +214,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection('classes')}
                   className={`font-medium py-2 transition-colors duration-300 text-left cursor-pointer ${
                     isScrolled || !isHomepage
-                      ? 'text-primary-700 hover:text-primary-800'
-                      : 'text-white hover:text-primary-200'
+                      ? 'text-primary-700'
+                      : 'text-white'
                   }`}
                 >
                   Classes
@@ -224,8 +224,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection('contact')}
                   className={`font-medium py-2 transition-colors duration-300 text-left cursor-pointer ${
                     isScrolled || !isHomepage
-                      ? 'text-primary-700 hover:text-primary-800'
-                      : 'text-white hover:text-primary-200'
+                      ? 'text-primary-700'
+                      : 'text-white'
                   }`}
                 >
                   Contact
@@ -251,7 +251,7 @@ export default function Navigation() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 z-40 w-12 h-12 bg-primary-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+        className="fixed bottom-8 right-8 z-40 w-12 h-12 bg-primary-700 text-white rounded-full shadow-lg lg:hover:shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer"
         aria-label="Back to top"
       >
         <ChevronUp size={20} />

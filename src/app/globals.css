@@ -63,6 +63,11 @@
   .scale-102 {
     transform: scale(1.02);
   }
+
+  .text-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* Custom scrollbar */
