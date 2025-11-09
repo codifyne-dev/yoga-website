@@ -27,10 +27,13 @@ export const metadata: Metadata = {
   keywords: siteConfig.seo.keywords,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://skylineyoga.com',
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     siteName: siteConfig.name,
@@ -73,8 +76,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
         <meta name="theme-color" content="#1B4332" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
