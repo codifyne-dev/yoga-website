@@ -33,7 +33,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-11 lg:mt-0 leading-tight px-4"
+            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-2 leading-tight px-4"
           >
             Find Your
             <span className="block gradient-text bg-gradient-to-r from-primary-200 to-white">
