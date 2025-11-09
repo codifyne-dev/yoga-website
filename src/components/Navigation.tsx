@@ -158,20 +158,14 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-colors duration-300 ${
+              className={`lg:hidden p-2 rounded-lg transition-colors duration-0 cursor-pointer hover:bg-primary-200/50 ${
                 isScrolled || !isHomepage
                   ? 'text-primary-700'
                   : 'text-white'
               }`}
               aria-label="Toggle menu"
             >
-              <motion.div
-                initial={false}
-                animate={{ rotate: isOpen ? 90 : 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                {isOpen ? <X size={24} className="w-6 h-6" /> : <Menu size={24} className="w-6 h-6" />}
-              </motion.div>
+              {isOpen ? <X size={24} className="w-6 h-6" /> : <Menu size={24} className="w-6 h-6" />}
             </button>
           </div>
         </div>

@@ -33,10 +33,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 mt-2 leading-tight px-4"
+            className="font-serif text-5xl lg:text-7xl xl:text-8xl font-bold mb-8 md:mb-14 leading-tight px-4"
           >
             Find Your
-            <span className="block gradient-text bg-gradient-to-r from-primary-200 to-white">
+            <span className="block gradient-text bg-gradient-to-r from-primary-200/90 to-white/90">
               Balance
             </span>
           </motion.h1>
@@ -44,17 +44,8 @@ export default function HeroSection() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl font-black mb-8 text-primary-100 max-w-2xl mx-auto leading-relaxed px-4"
-          >
-            {siteConfig.tagline}
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-md md:text-lg mb-12 sm:mb-12 text-white max-w-2xl mx-auto leading-relaxed px-4"
+            className="text-md md:text-lg mb-12 md:mb-16 text-white/90 max-w-2xl mx-auto leading-relaxed px-6"
           >
             {siteConfig.description}
           </motion.p>
@@ -73,7 +64,7 @@ export default function HeroSection() {
                   element.scrollIntoView({ behavior: 'smooth' })
                 }
               }}
-              className="bg-primary-700 hover:bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto cursor-pointer"
+              className="bg-primary-700/90 hover:bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto cursor-pointer"
             >
               Book Your First Class
             </Button>
@@ -86,34 +77,34 @@ export default function HeroSection() {
                   element.scrollIntoView({ behavior: 'smooth' })
                 }
               }}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary-700 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto"
+              className="border-2 border-white/90 text-white hover:bg-white hover:text-primary-700 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto"
             >
               View Our Classes
             </Button>
           </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="flex justify-center mt-4 sm:mt-6"
-          >
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center"
-            >
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="w-1 h-2 sm:h-3 bg-white rounded-full mt-1.5 sm:mt-2"
-              />
-            </motion.div>
-          </motion.div>
         </motion.div>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center"
+        >
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="w-1 h-2 sm:h-3 bg-white rounded-full mt-1.5 sm:mt-2"
+          />
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
